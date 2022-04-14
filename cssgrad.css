@@ -3,17 +3,14 @@ body {
 	align-items: center;
 	justify-content: space-around;
 	height: 100vh;
-	/*background-color: #000;*/
 	background-image: url(unnamed.jpg);
 	background-size: cover;
-	/*color: white;*/
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
 
 h2 {
@@ -29,7 +26,6 @@ h2 {
 	transition: 0.3s;
 	overflow: hidden;
 	border-radius: 3%;
-	/*border: 2px solid blue;*/
 }
 
 .box:hover {
@@ -79,7 +75,6 @@ h2 {
 	justify-content: space-between;
 	box-shadow: 3px;
 	border-radius: 3%;
-
 }
 
 .text-content a {
