@@ -13,9 +13,10 @@
 	<div class="container">
 
 		<!-- Section 1: Gambar Terpilih -->
-		<section id="kolom1">
-			<img src="ryu-jin.jpg" alt="Ryujin Terpilih" class="terpilih" width="100%">
-		</section>
+		<h1 id="judul">Dream Idol</h1>
+		<!-- <section id="kolom1"> -->
+			<!-- <img src="ryu-jin.jpg" alt="" class="terpilih" width="100%"> -->
+		<!-- </section> -->
 
 		<!-- Section 2: Daftar Profil Artis -->
 		<section id="kolom2">
@@ -56,6 +57,32 @@
 					</p>
 				</div>
 			</div>
+
+			<div class="box">
+				<div class="text-content">
+			<img src="ji-eun.jpg" alt="Jieun" class="gambar" width="100%">
+					<p>
+						<strong>Kim Ji Eun</strong> adalah aktris Korea Selatan kelahiran 9 Oktober 1993 yang dikenal lewat perannya dalam berbagai drama populer
+						seperti <i>The Veil, Again My Life, dan One Dollar Lawyer</i>. Ia memulai karier sebagai model dan tampil di sejumlah
+						video musik sebelum akhirnya meraih penghargaan sebagai Aktris Pendatang Baru Terbaik di MBC Drama Awards 2021. Dengan
+						kemampuan akting yang kuat dan visual yang memikat, Kim Ji Eun terus bersinar di industri hiburan Korea.
+
+					</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="text-content">
+					<img src="momo-twice.jpg" alt="Momo" class="gambar" width="100%">
+					<p>
+						<strong>Hirai Momo</strong> adalah seorang penyanyi dan penari asal Jepang yang berkarier di Korea Selatan sebagai anggota grup idola
+						TWICE di bawah naungan JYP Entertainment. Dikenal sebagai <em>dance machine</em> Momo memiliki kemampuan menari yang luar
+						biasa dan telah tampil dalam berbagai video musik serta acara televisi. Karismanya di atas panggung dan dedikasinya
+						sejak usia tiga tahun menjadikannya salah satu bintang K-pop non-Korea paling populer.
+
+					</p>
+				</div>
+			</div>
 		</section>
 
 		<!-- Footer Icon Media Sosial -->
@@ -76,7 +103,7 @@
 			if (a.target.className == 'gambar') {
 				let sumber = a.target.getAttribute('src');
 				pilihGambar.setAttribute('src', sumber);
-				pilihGambar.setAttribute('heigt', '10%');
+				// pilihGambar.setAttribute('heigt', '10%');
 			}
 		});
 	</script>

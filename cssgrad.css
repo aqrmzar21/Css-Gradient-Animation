@@ -1,15 +1,17 @@
 body {
+	width: 100%;
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	/* height: 100vh; */
+		justify-content: center;
+		/* pusat horizontal */
+		align-items: center;
+		/* pusat vertikal */
+		min-height: 100vh;
+		/* pastikan tinggi body memenuhi viewport */
 
 	/* ini gradient efek */
 	background: linear-gradient(to right, #833ab4,#fd1d1d, #fcb045);
 	background-size: 400% 400%;
 	animation: animate-background 10s infinite ease-in-out;
-	width: 100%;
-	/* height: 800px; */
 }
 
 @keyframes animate-background {
@@ -37,25 +39,16 @@ body {
 a {
 	text-decoration: none;
 }
-
+#judul {
+	text-align: center;
+	padding: 5px auto;
+	font-size: 3em;
+	background: linear-gradient(90deg, #4e008e, #8b2fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 h2 {
 	text-align: center;
-}
-
-.box {
-	position: relative;
-	width: 300px;
-	height: 420px;
-	font-size: 12px;
-	/*background-color: #090221;*/
-	background-color: rgb(103, 51, 119);
-	transition: 0.3s;
-	overflow: hidden;
-	border-radius: 3%;
-}
-
-.box:hover {
-	transform: scale(1.10);
 }
 
 .box::after {
@@ -73,14 +66,20 @@ h2 {
 	animation: border-effect 1.2s ease;
 }
 
-@keyframes border-effect {
-	0% {
-		transform: rotate(-40deg) translateY(-100px);
-	}
+.box {
+	position: relative;
+	width: 300px;
+	height: 420px;
+	font-size: 12px;
+	/*background-color: #090221;*/
+	background-color: rgb(103, 51, 119);
+	transition: 0.3s;
+	overflow: hidden;
+	border-radius: 3%;
+}
 
-	100% {
-		transform: rotate(-40deg) translateY(530px);
-	}
+.box:hover {
+	transform: scale(1.10);
 }
 
 .text-content {
@@ -101,6 +100,33 @@ h2 {
 	justify-content: space-between;
 	box-shadow: 3px;
 	border-radius: 3%;
+}
+#kolom1 {
+	/* width: 100%; */
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	padding: 20px;
+	background: rgba(36, 36, 36, 0.666);
+	/* flex-direction: row; */
+	/* width: 88%; */
+}
+#kolom2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	padding: 20px;
+}
+
+@keyframes border-effect {
+	0% {
+		transform: rotate(-40deg) translateY(-100px);
+	}
+
+	100% {
+		transform: rotate(-40deg) translateY(530px);
+	}
 }
 
 .text-content a {
@@ -127,28 +153,12 @@ h2 {
 	/* gap: 20px; */
 }
 
-#kolom1 {
-	/* width: 100%; */
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	padding: 20px;
-	background: rgba(36, 36, 36, 0.666);
-	/* flex-direction: row; */
-	/* width: 88%; */
-}
-#kolom2 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 30px;
-	padding: 20px;
-}
 .conten {
 	display: flex;
 	justify-content: space-evenly;
 	width: 70%;
 	/* height: 65%; */
+	margin: 0 auto;
 	padding: 1em;
 	background: rgba(36, 36, 36, 0.666);
 	box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
