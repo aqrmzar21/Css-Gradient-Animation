@@ -2,19 +2,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	height: 100vh;
-	/* background-image: url(unnamed.jpg); 
-	background-size: cover; */
-	/* } */
+	/* height: 100vh; */
 
 	/* ini gradient efek */
-	/* .animated-background { */
-	background: linear-gradient(to right, #833ab4,
-			#fd1d1d, #fcb045);
+	background: linear-gradient(to right, #833ab4,#fd1d1d, #fcb045);
 	background-size: 400% 400%;
 	animation: animate-background 10s infinite ease-in-out;
 	width: 100%;
-	height: 800px;
+	/* height: 800px; */
 }
 
 @keyframes animate-background {
@@ -51,6 +46,7 @@ h2 {
 	position: relative;
 	width: 300px;
 	height: 420px;
+	font-size: 12px;
 	/*background-color: #090221;*/
 	background-color: rgb(103, 51, 119);
 	transition: 0.3s;
@@ -59,7 +55,7 @@ h2 {
 }
 
 .box:hover {
-	transform: translateY(-15px);
+	transform: scale(1.10);
 }
 
 .box::after {
@@ -124,18 +120,36 @@ h2 {
 	background: linear-gradient(to right, #dce35b, #45b649);
 }
 
-.box-three::after {
-	width: 560px;
-	height: 50px;
-	background: linear-gradient(to right, #abcdef, #767665);
+.container {
+	display: flex;
+	/* justify-content: space-around; */
+	flex-direction: column;
+	/* gap: 20px; */
 }
 
+#kolom1 {
+	/* width: 100%; */
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	padding: 20px;
+	background: rgba(36, 36, 36, 0.666);
+	/* flex-direction: row; */
+	/* width: 88%; */
+}
+#kolom2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	padding: 20px;
+}
 .conten {
 	display: flex;
 	justify-content: space-evenly;
 	width: 70%;
-	height: 65%;
-	padding: 2em;
+	/* height: 65%; */
+	padding: 1em;
 	background: rgba(36, 36, 36, 0.666);
 	box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
 	border-radius: 20px;
@@ -154,15 +168,10 @@ h2 {
 
 .fc li {
 	list-style: none;
-	/* padding: 10px; */
-	/* height: 52px; */
 	margin: 0 10px;
 	/* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); */
 	border-radius: 50%;
 	backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.25);
-	border-top: 1px solid rgba(255, 255, 255, 0.5);
-	border-left: 1px solid rgba(255, 255, 255, 0.5); */
 }
 
 
