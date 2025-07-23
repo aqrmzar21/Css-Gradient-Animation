@@ -202,7 +202,8 @@ h1 {
   padding: 20px 10rem;
 }
 
-/* Jika Anda ingin rotasi vertikal (flip dari atas ke bawah) */
+/* Jika Anda ingin rotasi vertikal (flip dari atas ke bawah)
+kURANG BUAT RENSPOIVE LAYUTNYA  */
 /* Ganti .card:hover transform menjadi rotateX(180deg); */
 /* Ganti .card-back transform menjadi rotateX(180deg); */
 /* Ganti .card-front transform menjadi rotateX(0deg); */
