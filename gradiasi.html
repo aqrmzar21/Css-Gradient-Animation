@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animasi Box & BG</title>
+	<link rel="stylesheet" href="gradiasi.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+
+		<!-- Section 1: Gambar Terpilih -->
+		<h1 id="judul">Gradient Background</h1>
+		<!-- <section id="kolom1"> -->
+			<!-- <img src="ryu-jin.jpg" alt="" class="terpilih" width="100%"> -->
+		<!-- </section> -->
+
+		<!-- Section 2: Daftar Profil Artis -->
+		<section id="kolom2">
+			<div class="box">
+				<div class="text-content">
+					<img src="ryu-jin.jpg" alt="Ryujin" class="gambar" width="100%">
+					<p>
+						<strong>Shin Ryujin</strong> adalah seorang penyanyi, rapper, dan penari asal Korea Selatan yang dikenal
+						sebagai anggota grup <b>ITZY</b> di bawah naungan JYP Entertainment. Ia lahir pada 17 April 2001 di Seoul
+						dan mulai dikenal publik setelah tampil di acara survival <em>MIXNINE</em> serta video musik BTS <i>Love
+							Yourself</i>. Dengan gaya tomboy yang khas dan karisma panggung yang kuat, Ryujin menjadi salah satu ikon
+						K-pop generasi baru yang digemari secara global.
+					</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="text-content">
+					<img src="hyo-jo.png" alt="Han Hyo Joo" class="gambar" width="100%">
+					<p>
+						<strong>Han Hyo Joo</strong> aktris Korea Selatan yang dikenal karena kemampuan aktingnya yang luar biasa
+						dan peran-peran ikonik di layar kaca maupun layar lebar. Ia mulai dikenal luas lewat drama sejarah <i>Dong
+							Yi</i> dan semakin populer berkat perannya dalam <i>Brilliant Legacy</i>, <small>W-Two World</small>, dan
+						<i>Happiness</i>. Ia telah meraih berbagai penghargaan bergengsi, termasuk Baeksang Arts Award dan Blue
+						Dragon Film Award.
+					</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="text-content">
+					<img src="shin-eun.png" alt="Shin Eun Soo" class="gambar" width="100%">
+					<p>
+						<strong>Shin Eun Soo</strong> adalah aktris muda Korea Selatan yang memulai debutnya sebagai pemeran utama
+						dalam film <em>Vanishing Time: A Boy Who Returned</em> pada tahun 2016. Ia dikenal lewat perannya dalam
+						drama seperti <i>Twinkling Watermelon</i>, <i>Bad Papa</i>, dan <i>Summer Strike</i>. Dengan bakat alami dan pesona lembutnya, Shin Eun Soo terus berkembang sebagai salah satu talenta menjanjikan di
+						industri hiburan Korea.
+					</p>
+				</div>
+			</div>
+
+			
+			<div class="box">
+				<div class="text-content">
+					<img src="momo-twice.jpg" alt="Momo" class="gambar" width="100%">
+					<p>
+						<strong>Hirai Momo</strong> adalah seorang penyanyi dan penari asal Jepang yang berkarier di Korea Selatan sebagai anggota grup idola
+						TWICE di bawah naungan JYP Entertainment. Dikenal sebagai <em>dance machine</em> Momo memiliki kemampuan menari yang luar
+						biasa dan telah tampil dalam berbagai video musik serta acara televisi. Karismanya di atas panggung dan dedikasinya
+						sejak usia tiga tahun menjadikannya salah satu bintang K-pop non-Korea paling populer.
+
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Icon Media Sosial -->
+		<ul class="fc">
+			<li><a href="https://www.instagram.com/aqrm.id/"><i class="ri-instagram-line icon"></i></a></li>
+			<li><a href="https://web.facebook.com/aqram.zar.7"><i class="ri-facebook-circle-line icon"></i></a></li>
+			<li><i class="ri-whatsapp-line icon"></i></li>
+			<li><a href="https://github.com/aqrmzar21"><i class="ri-github-line icon"></i></a></li>
+			<li><i class="ri-twitter-line icon"></i></li>
+		</ul>
+	</div>
+
+	<script>
+		const pilihGambar = document.querySelector('.terpilih');
+		const sec = document.querySelector('section#kolom2');
+
+		sec.addEventListener('dblclick', function (a) {
+			if (a.target.className == 'gambar') {
+				let sumber = a.target.getAttribute('src');
+				pilihGambar.setAttribute('src', sumber);
+				// pilihGambar.setAttribute('heigt', '10%');
+			}
+		});
+	</script>
+</body>
+
+</html>
