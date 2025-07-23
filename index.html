@@ -1,100 +1,169 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Idol</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <!-- <style>
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 720px);
+        gap: 20px;
+      }
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Animasi Box & BG</title>
-	<link rel="stylesheet" href="gradiasi.css">
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-</head>
+      .gallery a {
+        width: 720px;
+        height: 720px;
+        overflow: hidden;
+        display: block;
+      }
 
-<body>
-	<div class="container">
+      .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-		<!-- Section 1: Gambar Terpilih -->
-		<h1 id="judul">Gradient Background</h1>
-		<!-- <section id="kolom1"> -->
-			<!-- <img src="ryu-jin.jpg" alt="" class="terpilih" width="100%"> -->
-		<!-- </section> -->
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        z-index: 999;
+      }
 
-		<!-- Section 2: Daftar Profil Artis -->
-		<section id="kolom2">
-			<div class="box">
-				<div class="text-content">
-					<img src="ryu-jin.jpg" alt="Ryujin" class="gambar" width="100%">
-					<p>
-						<strong>Shin Ryujin</strong> adalah seorang penyanyi, rapper, dan penari asal Korea Selatan yang dikenal
-						sebagai anggota grup <b>ITZY</b> di bawah naungan JYP Entertainment. Ia lahir pada 17 April 2001 di Seoul
-						dan mulai dikenal publik setelah tampil di acara survival <em>MIXNINE</em> serta video musik BTS <i>Love
-							Yourself</i>. Dengan gaya tomboy yang khas dan karisma panggung yang kuat, Ryujin menjadi salah satu ikon
-						K-pop generasi baru yang digemari secara global.
-					</p>
-				</div>
-			</div>
+      .overlay img {
+        max-width: calc(100% - 40px);
+        max-height: calc(100% - 40px);
+      }
 
-			<div class="box">
-				<div class="text-content">
-					<img src="hyo-jo.png" alt="Han Hyo Joo" class="gambar" width="100%">
-					<p>
-						<strong>Han Hyo Joo</strong> aktris Korea Selatan yang dikenal karena kemampuan aktingnya yang luar biasa
-						dan peran-peran ikonik di layar kaca maupun layar lebar. Ia mulai dikenal luas lewat drama sejarah <i>Dong
-							Yi</i> dan semakin populer berkat perannya dalam <i>Brilliant Legacy</i>, <small>W-Two World</small>, dan
-						<i>Happiness</i>. Ia telah meraih berbagai penghargaan bergengsi, termasuk Baeksang Arts Award dan Blue
-						Dragon Film Award.
-					</p>
-				</div>
-			</div>
+      .overlay:target {
+        display: flex;
+      }
 
-			<div class="box">
-				<div class="text-content">
-					<img src="shin-eun.png" alt="Shin Eun Soo" class="gambar" width="100%">
-					<p>
-						<strong>Shin Eun Soo</strong> adalah aktris muda Korea Selatan yang memulai debutnya sebagai pemeran utama
-						dalam film <em>Vanishing Time: A Boy Who Returned</em> pada tahun 2016. Ia dikenal lewat perannya dalam
-						drama seperti <i>Twinkling Watermelon</i>, <i>Bad Papa</i>, dan <i>Summer Strike</i>. Dengan bakat alami dan pesona lembutnya, Shin Eun Soo terus berkembang sebagai salah satu talenta menjanjikan di
-						industri hiburan Korea.
-					</p>
-				</div>
-			</div>
+      .overlay a {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Idol</h1>
+      <div class="gallery">
+        <a href="#img1"><img src="shin-eun.png" alt="img1" class="thumb" /></a>
+        <a href="#img2"><img src="yeji-itzy.png" alt="img2" class="thumb" /></a>
+        <a href="#img3"><img src="ji-eun.jpg" alt="img3" class="thumb" /></a>
+        <a href="#img4"><img src="hyo-jo.png" alt="img4" class="thumb" /></a>
+      </div>
+    </div>
+    <div class="card-container"></div>
 
-			
-			<div class="box">
-				<div class="text-content">
-					<img src="momo-twice.jpg" alt="Momo" class="gambar" width="100%">
-					<p>
-						<strong>Hirai Momo</strong> adalah seorang penyanyi dan penari asal Jepang yang berkarier di Korea Selatan sebagai anggota grup idola
-						TWICE di bawah naungan JYP Entertainment. Dikenal sebagai <em>dance machine</em> Momo memiliki kemampuan menari yang luar
-						biasa dan telah tampil dalam berbagai video musik serta acara televisi. Karismanya di atas panggung dan dedikasinya
-						sejak usia tiga tahun menjadikannya salah satu bintang K-pop non-Korea paling populer.
-
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<!-- Footer Icon Media Sosial -->
-		<ul class="fc">
-			<li><a href="https://www.instagram.com/aqrm.id/"><i class="ri-instagram-line icon"></i></a></li>
-			<li><a href="https://web.facebook.com/aqram.zar.7"><i class="ri-facebook-circle-line icon"></i></a></li>
-			<li><i class="ri-whatsapp-line icon"></i></li>
-			<li><a href="https://github.com/aqrmzar21"><i class="ri-github-line icon"></i></a></li>
-			<li><i class="ri-twitter-line icon"></i></li>
-		</ul>
-	</div>
-
-	<script>
-		const pilihGambar = document.querySelector('.terpilih');
-		const sec = document.querySelector('section#kolom2');
-
-		sec.addEventListener('dblclick', function (a) {
-			if (a.target.className == 'gambar') {
-				let sumber = a.target.getAttribute('src');
-				pilihGambar.setAttribute('src', sumber);
-				// pilihGambar.setAttribute('heigt', '10%');
-			}
-		});
-	</script>
-</body>
-
+    <!-- Overlay sections -->
+    <div id="img1" class="overlay">
+      <a href="">x close</a>
+      <!-- <img src="shin-eun.png" alt="img1-full" class="full-thumb" /> -->
+      <div class="card">
+        <div class="card-front">
+          <img src="shin-eun.png" alt="Shin Eun-soo" />
+        </div>
+        <div class="card-back">
+          <!-- <span>Shin Eun-soo</span> -->
+          <p>
+            <strong>Shin Eun Soo</strong> adalah aktris muda Korea Selatan yang memulai debutnya sebagai pemeran utama dalam film <em>Vanishing Time: A Boy Who Returned</em> pada tahun 2016. Ia dikenal lewat perannya dalam drama seperti
+            <i>Twinkling Watermelon</i>, <i>Bad Papa</i>, dan <i>Summer Strike</i>. Dengan bakat alami dan pesona lembutnya, Shin Eun Soo terus berkembang sebagai salah satu talenta menjanjikan di industri hiburan Korea.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="img2" class="overlay">
+      <a href="">x close</a>
+      <!-- <img src="yeji-itzy.png" alt="img2-full" class="full-thumb" /> -->
+      <div class="card">
+        <div class="card-front">
+          <img src="yeji-itzy.png" alt="Hwang Ye-ji" />
+        </div>
+        <div class="card-back">
+          <!-- <span>Hwangy Ye-ji</span> -->
+          <p>
+            <b>Hwang Yeji</b> adalah seorang penyanyi dan penari asal Korea Selatan yang dikenal sebagai <em>leader dari girl group ITZY</em> di bawah naungan <small>JYP Entertainment</small>. Ia memulai debutnya bersama ITZY pada tahun
+            2019 dan dikenal karena karismanya di atas panggung serta kemampuan menari yang luar biasa. Pada Maret 2025, Yeji resmi debut sebagai solois dengan mini album berjudul AIR, yang menampilkan sisi artistiknya yang lebih personal.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="img3" class="overlay">
+      <a href="">x close</a>
+      <!-- <img src="ji-eun.jpg" alt="img3-full" class="full-thumb" /> -->
+      <div class="card">
+        <div class="card-front">
+          <img src="ji-eun.jpg" alt="Kim Ji-eun" />
+        </div>
+        <div class="card-back">
+          <p>
+            <strong>Kim Ji-eun</strong> adalah aktris Korea Selatan kelahiran 9 Oktober 1993 yang dikenal lewat perannya dalam berbagai drama populer seperti <i>The Veil, Again My Life, dan One Dollar Lawyer</i>. Ia memulai kariernya
+            sebagai model iklan dan video musik sebelum debut akting pada tahun 2016. Kim Ji-eun dikenal karena kemampuannya memerankan karakter yang kuat dan beragam, mulai dari jaksa hingga paramedis. Pada tahun 2023, ia masuk dalam
+            daftar *<em><b>Forbes Korea Power Celebrity 40</b></em
+            >, menandai pengaruhnya yang semakin besar di industri hiburan Korea.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="img4" class="overlay">
+      <a href="">x close</a>
+      <!-- <img src="hyo-jo.png" alt="img4-full" class="full-thumb" /> -->
+      <div class="card">
+        <div class="card-front">
+          <img src="hyo-jo.png" alt="Han Hyo-jo" />
+        </div>
+        <div class="card-back">
+          <p>
+            <strong>Han Hyo Joo</strong> aktris Korea Selatan yang dikenal karena kemampuan aktingnya yang luar biasa dan peran-peran ikonik di layar kaca maupun layar lebar. Ia mulai dikenal luas lewat drama sejarah <i>Dong Yi</i> dan
+            semakin populer berkat perannya dalam <i>Brilliant Legacy</i>, <small>W-Two World</small>, dan <i>Happiness</i>. Ia telah meraih berbagai penghargaan bergengsi, termasuk Baeksang Arts Award dan Blue Dragon Film Award.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="img5" class="overlay">
+      <a href="">x close</a>
+      <div class="card">
+        <div class="card-front">
+          <img src="ryu-jin.png" alt="Shin Ryu jin" />
+        </div>
+        <div class="card-back">
+          <p>
+            <strong>Shin Ryujin</strong> adalah seorang penyanyi, rapper, dan penari asal Korea Selatan yang dikenal sebagai anggota grup <b>ITZY</b> di bawah naungan JYP Entertainment. Ia lahir pada 17 April 2001 di Seoul dan mulai dikenal
+            publik setelah tampil di acara survival <em>MIXNINE</em> serta video musik BTS <i>Love Yourself</i>. Dengan gaya tomboy yang khas dan karisma panggung yang kuat, Ryujin menjadi salah satu ikon K-pop generasi baru yang digemari
+            secara global.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="img6" class="overlay">
+      <a href="">x close</a>
+      <div class="card">
+        <div class="card-front">
+          <img src="momo-twicw" alt="Hirai Momo" />
+        </div>
+        <div class="card-back">
+          <p>
+            <strong>Hirai Momo</strong> adalah seorang penyanyi dan penari asal Jepang yang berkarier di Korea Selatan sebagai anggota grup idola TWICE di bawah naungan JYP Entertainment. Dikenal sebagai <em>dance machine</em> Momo memiliki
+            kemampuan menari yang luar biasa dan telah tampil dalam berbagai video musik serta acara televisi. Karismanya di atas panggung dan dedikasinya sejak usia tiga tahun menjadikannya salah satu bintang K-pop non-Korea paling
+            populer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
